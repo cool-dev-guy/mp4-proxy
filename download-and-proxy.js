@@ -40,7 +40,7 @@ export default {
       // simple hack to bypass cloudflare. :)
       const headers = new Headers(proxy.headers);
       headers.set('Access-Control-Allow-Origin', '*');
-      headers.set('Content-Disposition','attachment; filename="filename.jpg"');
+      headers.set('Content-Disposition','attachment; filename="video.mp4"');
       if (request.headers.get('range')===null||proxy.headers.get('Content-Range')===null){
         headers.set("Accept-Ranges", "bytes")
       }
